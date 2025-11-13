@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🌍 Translate App</title>
+    <style>
+        body { font-family: Arial; margin: 40px; background: #f4f4f9; }
+        .container { background: white; padding: 20px; border-radius: 10px; width: 50%; margin: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        textarea, select, button { width: 100%; margin-top: 10px; padding: 8px; font-size: 16px; }
+        .result { margin-top: 20px; font-size: 18px; background: #e8f5e9; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🌐 Django Translation App</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Translate</button>
+        </form>
+        {% if result %}
+        <div class="result">
+            <b>Translation:</b> {{ result }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
