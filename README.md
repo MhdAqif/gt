@@ -22,5 +22,6 @@ A simple yet powerful **language translator web application** built with **Djang
 
 ---
 
-## 📂 Website : https://googletranslator-1w8o2q0ry-aqifs-projects-0a1b3a64.vercel.app/
+## 📂 Website :
+ https://googletranslator-1w8o2q0ry-aqifs-projects-0a1b3a64.vercel.app/
 
